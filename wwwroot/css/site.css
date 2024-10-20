@@ -1,0 +1,187 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+.nav-item{
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover{
+    transform: scale(1.08);
+}
+
+.nav-item {
+    position: relative;
+    overflow: hidden; /* Hide overflowing border-radius during transition */
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #d2b48c; /* Light brown color */
+    border-radius: 96px; /* Adjust the border-radius to make it more rounded */
+    z-index: -1; /* Place the background behind the text/content */
+    transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+    .nav-item:hover::before {
+        width: 100%;
+    }
+
+.btn,
+.btn-link.nav-link,
+.form-control,
+.form-check-input {
+    transition: transform 0.3s ease-in-out;
+}
+
+    .btn:hover,
+    .btn:active:hover,
+    .btn-link.nav-link:hover,
+    .form-control:hover,
+    .form-check-input:hover {
+        transform: scale(1.08);
+    }
+
+    .btn:focus,
+    .btn:active:focus,
+    .btn-link.nav-link:focus,
+    .form-control:focus,
+    .form-check-input:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5), 0 0 0 0.4rem #007bff;
+    }
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #d1ccc5;
+    margin-right: 0px;
+    margin-left: 0px;
+   
+}
+.text-center {
+    text-align: center;
+}
+
+
+.art-app-content {
+    margin-top: 20px; /* Add margin to the top of the art content */
+}
+
+h1, h2, p {
+    color: #333; /* Set text color to a dark shade for better readability */
+}
+
+a {
+    color: #007BFF; /* Set link color to a contrasting color */
+}
+
+/* ..................  */
+/* Increase the spacing between navigation items */
+/*.nav-item {
+    margin-bottom: 15px;*/ /* Adjust the margin-bottom value to increase or decrease the spacing */
+/*}*/
+
+/* Style for the navigation container */
+/*.navbar {
+    background-color: #f9f9f9;*/ /* Background color for the navigation bar */
+    /*padding: 1px;*/ /* Adjust the padding to control the size of the navigation bar */
+    /*border-radius: 20px;*/ /* Adjust the border-radius to make it rounded */
+    /*margin-top: 20px;*/ /* Adjust the margin-top value to lower the navigation bar */
+    /*margin-left: 20px;
+    margin-right: 20px;
+}*/
+
+/* Pseudo-element for the hover effect */
+/*.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #d2b48c;*/ /* Light brown color */
+    /*border-radius: 8px;*/ /* Adjust the border-radius to make it more rounded */
+    /*z-index: -1;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+}*/
+/* Style for the navigation container */
+.navbar {
+    background-color: #f9f9f9; /* Background color for the navigation bar */
+    padding: 10px; /* Adjust the padding to control the size of the navigation bar */
+    border-radius: 20px; /* Adjust the border-radius to make it rounded */
+    margin-top: 20px; /* Adjust the margin-top value to lower the navigation bar */
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Center the navigation items vertically */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Increase the spacing between navigation items */
+.nav-item {
+    margin-bottom: 0px; /* Adjust the margin-bottom value to increase or decrease the spacing */
+}
+
+    /* Pseudo-element for the hover effect */
+    .nav-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #d2b48c; /* Light brown color */
+        border-radius: 8px; /* Adjust the border-radius to make it more rounded */
+        z-index: -1;
+        transition: width 0.3s ease;
+    }
+
+    .nav-item:hover::before {
+        width: 100%;
+    }
+
+
+
+body {
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+

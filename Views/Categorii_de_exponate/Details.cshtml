@@ -1,0 +1,24 @@
+﻿@model test3.Models.Categorii_de_exponate
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Categorii_de_exponate</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tipul_de_exponat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tipul_de_exponat)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.CategorieID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
